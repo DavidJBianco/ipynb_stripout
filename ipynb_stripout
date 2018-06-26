@@ -20,6 +20,12 @@ def strip_output(nb):
             cell['outputs'] = []
         if 'execution_count' in cell:
             cell['execution_count'] = 0
+        if 'metadata' in cell:
+            if 'ExecuteTime' in cell['metadata']:
+                # An artifact of the ExecuteTime Jupyter Notebook extension.
+                # If present, remove it entirely, don't just set it to
+                # empty or 0
+                del cell['metadata']['ExecuteTime']
     return nb
 
 if __name__ == '__main__':
