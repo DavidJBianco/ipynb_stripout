@@ -26,6 +26,12 @@ def strip_output(nb):
                 # If present, remove it entirely, don't just set it to
                 # empty or 0
                 del cell['metadata']['ExecuteTime']
+            if 'variables' in cell['metadata']:
+                # The Python Markdown extension uses this to store information
+                # about the state of Python variables in a Markdown cell. This
+                # can be a potential information leak, so be sure to remove it.
+                del cell['metadata']['variables']
+                
     return nb
 
 if __name__ == '__main__':
