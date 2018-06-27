@@ -10,6 +10,8 @@ This repo is forked from [jond3k's version](https://github.com/jond3k/ipynb_stri
 
 I'll add more in the future, as needed. __Pull requests to stip additional cell types are always welcome!__
 
+Another difference with this fork is that I've remove support for older v3 notebook files.  All recent versions of the notebook generate v4 files by default, so this shouldn't have much of an impact.
+
 ## Install (OS X)
 
 First you need to install the `ipynb_stripout` script. Run the following from your terminal:
