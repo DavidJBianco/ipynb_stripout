@@ -16,7 +16,7 @@ Another difference with this fork is that I've remove support for older v3 noteb
 
 First you need to install the `ipynb_stripout` script. Run the following from your terminal:
 
-	wget -O /usr/local/bin/ipynb_stripout "https://raw.githubusercontent.com/jond3k/ipynb_stripout/master/ipynb_stripout"
+	wget -O /usr/local/bin/ipynb_stripout "https://raw.githubusercontent.com/DavidJBianco/ipynb_stripout/master/ipynb_stripout"
 	chmod +x /usr/local/bin/ipynb_stripout
 
 ## Configure git
@@ -37,7 +37,7 @@ Go to the root of the repository you want to add it to and  `.gitattributes` wit
 Now you can commit the attributes.
 
 	git add .gitattributes
-	git commit -m "Added ipynb_stripout. See https://github.com/jond3k/ipynb_stripout" .gitattributes
+	git commit -m "Added ipynb_stripout. See https://github.com/DavidJBianco/ipynb_stripout" .gitattributes
 
 ## Add notebook files to version control
 
